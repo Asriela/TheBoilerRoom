@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Minor
+public class Minor : Citizen
 {
     
 }

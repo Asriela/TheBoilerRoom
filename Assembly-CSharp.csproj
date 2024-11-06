@@ -64,6 +64,7 @@
     <Compile Include="Assets\1\1.2\Scripts\Minor.cs" />
     <Compile Include="Assets\1\1.2\Scripts\Adult.cs" />
     <Compile Include="Assets\1\1.2\Scripts\Citizen.cs" />
+    <Compile Include="Assets\1\1.2\Scripts\ConstructionWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2\2.1\2.1.txt" />
