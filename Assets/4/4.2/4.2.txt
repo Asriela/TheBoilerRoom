@@ -1,0 +1,22 @@
+Describe how to optimise Unity performance for XR applications. (10 points)
+
+Reduce draw calls by combining meshes, minimizing dynamic objects, using gpu instancing so identical objects like billions of rocks can share
+a single draw call.
+
+optimize lighting by baking lights into the scene for objects that don't move so its once off, use light probes for dynamic objects
+to seem lit up by baked lights and generally have less real time lighting.
+
+Don't render each eye separately , thus halving the render work.
+
+Optimize textures and materials by compressing textures which are thus quicker to load into memory and take up less space in memory,
+mipmapping so that we switch between different resolutions of textures depending on how far away they are, combining textures into a single
+atlas and don't do fancy shader stuff like complex fragment shaders.
+
+LOD and culling, models become lower res when they are further away, thus having fewer polygons and don't render stuff that's outside the camera view.
+
+Do physics calculations at a lower rate and don't use complex colliders like box or sphere.
+
+Lower the resolution of each rendered frame or use foveated rendering, keeping the center of the frame high res and the peripheral areas lower
+res where the player eye isn't really focused.
+
+Don't go crazy with spatialized audio , its taxing. Also lets not get wild with the amount of active audio sources either.

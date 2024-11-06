@@ -1,0 +1,37 @@
+Describe the principles of inheritance, polymorphism, and encapsulation in OOP. (10
+points)
+
+Inheritance:
+Inheritance allows a child or subclass to inherit properties and behaviors from a parent class.
+So I can have a weapon class as the base class and gun as its child and shotgun and rifle as children of the gun class.
+This way I prevent repeating code that all the guns would all have like reload and shoot.
+The weapon class can have methods like arm and disarm that all weapons of every kind would need.
+This also sets up a hierarchical relationship for the code to follow.
+
+It also allows one to point to a parent class to refer to its children.
+So I can say AddGun(new Shotgun()) because the shotgun is a child of the gun class. 
+This gives me flexibility in the types I can pass.
+
+I can also extend the parent class and override methods if the child class needs a unique implementation.
+
+  
+Polymorphism:
+Means OOP supports multiple forms, which in this case is different types treated as instances of a shared parent class. 
+
+The one way different forms of the same idea can happen is through overloading.
+With compile time polymorphism, you can have a few methods of the same name have different implementations depending on the parameters assigned to each.
+
+With runtime polymorphism, you can use interfaces and overriding.
+Overriding allows a child class to have its own implementation, overriding however the parent method worked.
+For example the shotgun and rifle can have different implementations of the reload method as they reload differently.
+
+An interface is a contract made with a class saying it has to have certain methods present.  
+So I can also give the weapon class an IDestructable forcing it to have TakeDamage and Destroy methods present.
+This way since I want weapons to be able to be destroyed as well, I can now call TakeDamage on weapons just as I could with anything else
+I add the IDestructable interface to like say, the wildlife class. This way interfaces allow me to interface with different classes in a shared way.
+
+Encapsulation:
+So basically we are putting the code in a capsule and controlling access to it.
+Objects handle how accessible its members are with access modifiers like private, public and protected.
+Protected meaning only its subclasses can access this member, public meaning all classes can and private meaning only the class its in can access it.
+This provides both security and a sense for what the members are used.

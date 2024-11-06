@@ -1,0 +1,10 @@
+Describe the Unity scene hierarchy and how it relates to GameObjects and
+Components. (10 points)
+
+The scene hierarchy contains the objects that constitutes it. 
+The objects are children of the scene and each object has its own components that make up that object like scripts or built in components 
+like transform component that gives it a physical position in the scene or box collider for physics collisions for example.
+
+Objects in a scene can also have their own children objects and so that will for example effect the transform property of the children.
+So moving the parent moves its children objects with it.
+Game objects can also be empty but basically serve as containers for components and scenes serve as containers for game objects.

@@ -1,0 +1,11 @@
+Describe the differences between AR and VR development in Unity, including the use of
+XRSession and XRNode. (10 points)
+
+AR for putting the monster under my bed, VR for living in the monsters world.
+An XRSession creates a session with the devices that we need the data from. 
+With AR that's tracking camera movement, detect where the surfaces around you are and 
+recognize real world objects. Unity supports AR core and AEKit to interface with the android or ios device to get that special data.
+With VR the XRSession is for configuring the tracking for the headsets and controller.
+
+XRNodes are essentially the nodes on the players body, that's how I see it. A node for the head (AR - the camera, VR - the headset) and then
+a node each for each hand if the player has hand controllers. The nodes are used to get position and rotation data.

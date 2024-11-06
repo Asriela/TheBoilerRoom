@@ -1,0 +1,19 @@
+ Explain the concept of a Render Pipeline in Unity and how it affects rendering. (10
+points)
+
+Rendering has many steps, thats the pipeline. Like a factory assembly line that convert
+3D scene data into a pretty 2D end product to display on the screen.
+What is part of the pipleline effects how that final frame looks and how long it takes to produce it.
+
+Unity has a few options , the old one called the built in render pipeline, which is fine for normal use.
+Universal render pipeline which has cooler features and better performance, so good for mobile (weak devices) and VR which is a hungry beast.
+High Definition Render Pipeline , basically for your latest unreal engine demo look. 
+So your AAA real time ray tracing, physically based rendering stuff.
+
+The rendering pipeline has stages such as:
+Scene stage: How and what actually gets rendered.
+Geometry Stage: Raw 3D data calculations and transformations.
+Lighting Stage: Determines how lighting interacts and effects things.
+Shader Stage: Applies the shader code to the materials defining their appearance.
+Post processing: Adds all the cool stuff like your lovely overblown 2000s bloom and depth of field that I wish more games did right.
+

@@ -1,0 +1,24 @@
+Explain how to set up a basic XR project in Unity, including camera configuration using
+XRCamera and XRNode. (10 points)
+
+1 XR package setup
+	1.1 open a universal render pipeline 3D unity project 
+	1.2 From the package manager install XR plugin management and XR interaction toolkit
+	1.3 Choose the options you want to support in project settings XR plugin management. 
+	So like are we using oculus , open xr or mock hdm loader.
+
+2 XR Origin and XR camera
+	2.1 Add a XR origin game object to the scene.
+	2.2 The XR Camera is a child of XR origin , you can adjust the field of view and clipping planes in the inspector.
+	
+3 XR Nodes
+	3.1 XR Origin automatically manages the tracking of XRNode.Head , XRNode.LeftHand and XRNode.RightHand
+	but for manual tracking you can use InputDevices such as InputDevice leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+	3.2 Unity has a the default controllers prefab to visualize the hands in VR but you can use your own colliders and renderers to show 
+	something else like hands in the place of it.
+	3.3 To add actions like grabbing you can use button inputs from XRNode.LeftHand and XRNode.Righthand
+	
+4 XR Ray Interactor
+	4.1 XRInteractorLineVisual can let you use ray cast to do point and click interactions like you would with a mouse.
+	
+	

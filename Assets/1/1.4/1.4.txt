@@ -1,0 +1,10 @@
+Explain the difference between static and instance members in a class. (10 points)
+
+An instance member is a single object created from a class.
+So Character Bob = new Character (); creates a new instance of the character class and stores it in Bob.
+To access that instance of the character class I have to access it via that specific object so Bob.Speak();
+
+With a static member I can have a class say called Main be static and so it only has one instance of it, it cant make more instances of itself.
+I can also give a class that isn't static itself static members like public static int CharacterCount; can keep track of how many instances
+we have made of this class with a static method public static void IncrementCharacterCount() {CharacterCount++;} Ofcourse there can only be one 
+character count in this situation, to count for all the objects of this class and so its static and the method to increment it is also static.

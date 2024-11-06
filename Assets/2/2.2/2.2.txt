@@ -1,0 +1,12 @@
+Explain the difference between MonoBehaviours and ScriptableObjects. (10 points)
+
+To attach a script to a game object it has to inherent from monobehaviour which is the base class from which every Unity script derives.
+It is attached to the lifecycle of the game  object and is used to run your objects essentially. 
+Attaching it to a game object makes a single instance of that class to run as the object of the class for that game object.
+
+Scriptable objects are just data containers and are not tied to game objects but are rather used by other scripts to access data.
+For example I can make a scriptable object class that defines the different aspects of a character, then I can make multiple instances
+of that class in the project files as Bob, Sam and Jade. Then using say a character selection class I can access one of those data container
+instances, say Bob and feed it into a Monobehaviour class say Character, giving that class the data from the scriptable object making this 
+generic character you could say, into Bob.
+Its great because you can edit it in the inspector and quickly make different versions, like different gun types.
