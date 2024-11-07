@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class Minor : Citizen
 {
-    public Minor(string ID) : base(ID) { }
+    public Minor() : base() 
+    {
+        Title = "Child";
+    }
 
     public override void ShowID()
     {

@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class CityPlanner : Adult, IGovernmentWorker
 {
-    public CityPlanner(string id) : base(id) { }
+    public CityPlanner() : base() 
+    {
+        Title = "City Planner";
+    }
 
     public override void ShowID()
     {

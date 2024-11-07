@@ -3,7 +3,10 @@ using UnityEngine;
 public class ConstructionWorker : Adult
 {
     
-    public ConstructionWorker(string id) : base(id) { }
+    public ConstructionWorker() : base() 
+    {
+        Title = "Construction Worker";
+    }
 
     public override void ShowID()
     {

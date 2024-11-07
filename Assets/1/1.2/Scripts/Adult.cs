@@ -2,7 +2,12 @@ using UnityEngine;
 
 public abstract class Adult : Citizen
 {
-    public Adult(string ID) : base(ID) { }
+    public Adult() : base() 
+    {
+        Title = "Adult";
+    }
+
+    
 
     public override void ShowID()
     {
