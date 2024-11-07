@@ -95,6 +95,14 @@
       "version": "1.4.0-preview.2",
       "source": "registry"
     },
+    "com.unity.xr.openxr@1.12.1": {
+      "name": "com.unity.xr.openxr",
+      "resolvedPath": "C:\\Users\\Admin\\Documents\\UNITY\\TheBoilerRoom\\Library\\PackageCache\\com.unity.xr.openxr",
+      "fingerprint": "c14fb15b587c841ef74b5923c52f7f42c3440303",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.12.1",
+      "source": "registry"
+    },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "resolvedPath": "C:\\Users\\Admin\\Documents\\UNITY\\TheBoilerRoom\\Library\\PackageCache\\com.unity.modules.accessibility",
@@ -299,6 +307,14 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.xr.core-utils@2.3.0": {
+      "name": "com.unity.xr.core-utils",
+      "resolvedPath": "C:\\Users\\Admin\\Documents\\UNITY\\TheBoilerRoom\\Library\\PackageCache\\com.unity.xr.core-utils",
+      "fingerprint": "f4116c6290594e2609ede158fccdad4a54a17081",
+      "editorCompatibility": "2019.4.0f1",
+      "version": "2.3.0",
+      "source": "registry"
+    },
     "com.unity.xr.legacyinputhelpers@2.1.11": {
       "name": "com.unity.xr.legacyinputhelpers",
       "resolvedPath": "C:\\Users\\Admin\\Documents\\UNITY\\TheBoilerRoom\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers",
@@ -313,14 +329,6 @@
       "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.3.2",
-      "source": "registry"
-    },
-    "com.unity.xr.core-utils@2.3.0": {
-      "name": "com.unity.xr.core-utils",
-      "resolvedPath": "C:\\Users\\Admin\\Documents\\UNITY\\TheBoilerRoom\\Library\\PackageCache\\com.unity.xr.core-utils",
-      "fingerprint": "f4116c6290594e2609ede158fccdad4a54a17081",
-      "editorCompatibility": "2019.4.0f1",
-      "version": "2.3.0",
       "source": "registry"
     },
     "com.unity.render-pipelines.core@17.0.3": {

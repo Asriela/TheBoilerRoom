@@ -1,7 +1,8 @@
 .vs/
 Temp/
-Assets/Samples/
 
 Library/PackageCache/
 Packages/com.unity.xr*/Samples~/
 Packages/com.unity.xr*/Examples/
+
+Library/

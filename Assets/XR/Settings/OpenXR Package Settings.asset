@@ -173,25 +173,25 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 1310271809801222288}
-  - {fileID: 2141129487343271402}
   - {fileID: 3875481212929634903}
-  - {fileID: -5403568782771018963}
-  - {fileID: 4566298308734576662}
-  - {fileID: -4840229605202873140}
-  - {fileID: 3077083413455990379}
-  - {fileID: -7956520117131840901}
-  - {fileID: -5893864560897182642}
-  - {fileID: -5626966305478766840}
-  - {fileID: 8149743805105087132}
   - {fileID: 912643957112896571}
-  - {fileID: 1737092640620322456}
+  - {fileID: -7956520117131840901}
+  - {fileID: 8149743805105087132}
   - {fileID: 2883233148164637310}
+  - {fileID: -6520134554637459966}
+  - {fileID: -5626966305478766840}
+  - {fileID: -5893864560897182642}
+  - {fileID: -2288319247689789697}
+  - {fileID: 5884752977039249525}
+  - {fileID: -5403568782771018963}
   - {fileID: 3095429194943021102}
   - {fileID: -6159869362725590138}
-  - {fileID: -6520134554637459966}
-  - {fileID: 5884752977039249525}
-  - {fileID: -2288319247689789697}
+  - {fileID: 2141129487343271402}
+  - {fileID: 4566298308734576662}
+  - {fileID: -4840229605202873140}
+  - {fileID: 1310271809801222288}
+  - {fileID: 1737092640620322456}
+  - {fileID: 3077083413455990379}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f928d0d73a35f294fbe357ca17aa3547, type: 3}
   m_Name: MicrosoftHandInteraction Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Microsoft Hand Interaction Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handtracking
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
