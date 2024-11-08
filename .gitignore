@@ -1,8 +1,7 @@
 .vs/
 Temp/
 
-Library/PackageCache/
-Packages/com.unity.xr*/Samples~/
-Packages/com.unity.xr*/Examples/
-
 Library/
+
+!ProjectSettings/
+!Packages/
