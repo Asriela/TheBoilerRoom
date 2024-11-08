@@ -1,5 +1,7 @@
 Please note that the following packages are not included in the repository but are required to run the project:
+
 1-XR Package Manager
+
 2-XR Interaction Toolkit and its samples: Starter Assets and XR Device Simulator.
 
 Under assets you will see folders marked from 1 to 5. Each folder contains its appropriate answer.
