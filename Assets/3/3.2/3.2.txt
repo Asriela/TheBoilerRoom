@@ -10,6 +10,9 @@ XRCamera and XRNode. (10 points)
 		1.The Starter Assets sample just to make it easier to set up.
 		2.The XR Device Simulator for the prefab that allows us to move without a VR headset and controllers,
 		using mouse and keyboard instead.
+	If you use Open XR you need to also choose your enabled interaction profiles in XR plugin management under
+	Open XR. These determine which devices you wish to support.
+	You also need to fix any errors you might have under project validation.
 
 2 XR Origin and XR camera
 	2.1 Add a XR origin (XR Rig) prefab from the XR interaction toolkit under samples.

@@ -1,47 +1,41 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class XRInputManager : MonoBehaviour
 {
 
+    [SerializeField] private XRDeviceSimulator _xrDeviceSimulator;
+    public InputAction primaryButtonAction;
 
-    private InputData _inputData;
-
-    private float triggerValue;
-
-    private void Start()
+    private void OnEnable()
     {
-        _inputData = GetComponent<InputData>();
-        Debug.Log("Started inputData: " + _inputData);
+
+        if(_xrDeviceSimulator != null) 
+            primaryButtonAction = _xrDeviceSimulator.primaryButtonAction;
+        
+
+        if (primaryButtonAction != null)
+            primaryButtonAction.performed += OnPrimaryButtonPressed;
+        
     }
-    // Update is called once per frame
-    void Update()
+
+    private void OnDisable()
     {
-        if (_inputData._leftController.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
-        {
-            //_leftMaxScore = theFloat;
-       
-            Debug.Log("triggerValue: " + triggerValue);
-        }
-
-        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool Abutton))
-        {
-            //_leftMaxScore = theFloat;
-           
-            Debug.Log("A button: " + Abutton);
-        }
-
-        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool Bbutton))
-        {
-            Debug.Log("B button: " + Bbutton);
-        }
-
+        if (primaryButtonAction != null)
+            primaryButtonAction.performed -= OnPrimaryButtonPressed;
+        
     }
 
 
+    private void OnPrimaryButtonPressed(InputAction.CallbackContext context)
+    {
+        Debug.Log("Primary button input works!");
 
- 
-    
+    }
+
 }
 
