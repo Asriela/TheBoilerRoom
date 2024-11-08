@@ -9,3 +9,8 @@ Those with scenes can be run.
 Question 5 has a scene that contain elements of all the questions together as one. 
 Teleport or move over to the table where there is a screen allowing you to add either construction workers or city planners to the citizen list.
 
+===========
+IMPORTANT
+===========
+The test seemed to have questions that refer to depricated XR classes.
+I tried to answer them as close as possible by using the newest methodologies especially since XR Interactions Toolkit has had a recent update to version 3.0.
